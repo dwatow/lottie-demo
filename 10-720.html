@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+<div class="lottie"></div>
+
+  <script>
+    document.querySelectorAll('.lottie').forEach(element => {
+      var animation = bodymovin.loadAnimation({
+        container: element, // Required
+        path: '720.json', // Required
+        renderer: 'svg', // Required
+        // renderer: 'canvas', // Required
+        // renderer: 'html', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Hello World", // Name for future reference. Optional.
+      })
+    })
+  </script>
+</body>
+</html>
