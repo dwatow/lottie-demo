@@ -8,30 +8,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
-<div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
+  <div class="lottie"></div>
 
+  <script src="./animation.js"></script>
   <script>
-    document.querySelectorAll('.lottie').forEach(element => {
-      var animation = bodymovin.loadAnimation({
-        container: element, // Required
-        path: 'test_03.json', // Required
-        // renderer: 'svg', // Required
-        renderer: 'canvas', // Required
-        // renderer: 'html', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Hello World", // Name for future reference. Optional.
-      })
-    })
+    runLottie(() => `test_03.json`)
   </script>
 </body>
 </html>

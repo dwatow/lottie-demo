@@ -19,23 +19,13 @@
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="lottie"></div>
-</div>
+  <div class="container">
+    <div class="lottie"></div>
+  </div>
 
+  <script src="./animation.js"></script>
   <script>
-    document.querySelectorAll('.lottie').forEach((element, index) => {
-      var animation = bodymovin.loadAnimation({
-        container: element, // Required
-        path: `30-${index}.json`, // Required
-        // renderer: 'svg', // Required
-        renderer: 'canvas', // Required
-        // renderer: 'html', // Required
-        loop: true, // Optional
-        autoplay: true, // Optional
-        name: "Hello World", // Name for future reference. Optional.
-      })
-    })
+    runLottie((index) => `30-${index}.json`)
   </script>
 </body>
 </html>
