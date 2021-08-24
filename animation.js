@@ -5,8 +5,8 @@ function runLottie (jsonPath) {
     lottie.loadAnimation({
       container: element, // Required
       path: jsonPath(index), // Required
-      renderer: 'svg', // Required
-      // renderer: 'canvas', // Required
+      // renderer: 'svg', // Required
+      renderer: 'canvas', // Required
       // renderer: 'html', // Required
       loop: true, // Optional
       autoplay: true, // Optional
